@@ -10,6 +10,7 @@ const EarthCanvas = () => {
       frameloop="demand"
       camera={{ position: [-4, 3, 6], fov: 45, near: 0.1, far: 200 }}
     >
+      <color attach="background" args={["black"]} />
       <OrbitControls
         autoRotate
         enableZoom={false}
@@ -19,7 +20,7 @@ const EarthCanvas = () => {
         autoRotateSpeed={0.7}
       />
       <ambientLight intensity={0.1} />
-      <primitive object={gltf.scene} scale={2.5} />;
+      <primitive object={gltf.scene} scale={2.5} />;<button>Button</button>
     </Canvas>
   );
 };
