@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.earth-canvas-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c0d0e;
+  /* Add any additional CSS properties here */
+}
