@@ -1,7 +1,7 @@
 import React from "react";
 import TitleText from "./TitleText";
 import "../index.css";
-
+import { Link } from "react-router-dom";
 const WelcomePage = () => {
   return (
     <>
@@ -23,8 +23,10 @@ const WelcomePage = () => {
           <a>THE FUTURE OF AI</a>
         </div>
       </div>
-      <div className="exploreButton">
-        <a>EXPLORE</a>
+      <div>
+        <Link className="exploreButton" to="/Loginpage">
+          EXPLORE
+        </Link>
       </div>
     </>
   );

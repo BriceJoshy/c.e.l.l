@@ -4,11 +4,16 @@ import WelcomePage from "./components/WelcomePage";
 import LoadingScreen from "./components/LoadingScreen";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <WelcomePage />,
+  },
+  {
+    path: "/LoginPage",
+    element: <LoginPage />,
   },
 ]);
 
