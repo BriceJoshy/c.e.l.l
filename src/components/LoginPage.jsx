@@ -1,7 +1,15 @@
 import React from "react";
+import LoginNavBar from "./LoginNavBar";
+import transition from "../transition";
 
 const LoginPage = () => {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="loginBG">
+      <div className="LoginPage">
+        <LoginNavBar />
+      </div>
+    </div>
+  );
 };
 
 export default LoginPage;

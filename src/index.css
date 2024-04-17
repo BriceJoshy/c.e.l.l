@@ -132,3 +132,31 @@ canvas {
 .exploreButton:hover {
   letter-spacing: 0.25em;
 }
+
+.loginBG {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+.LoginPage {
+  padding: 50px;
+  color: white;
+  font-family: "Electrolize", sans-serif;
+  font-style: normal;
+}
+
+.LoginNavBar {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.DimSpace {
+  margin-left: 150px;
+  color: gray;
+}
