@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import "./index.css";
 const transition = (Ogcomponent) => {
   return () => {
     <>

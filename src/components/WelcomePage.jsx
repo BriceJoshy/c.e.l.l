@@ -2,7 +2,6 @@ import React from "react";
 import TitleText from "./TitleText";
 import "../index.css";
 import { Link } from "react-router-dom";
-import transition from "../transition";
 
 const WelcomePage = () => {
   return (
@@ -26,7 +25,7 @@ const WelcomePage = () => {
         </div>
       </div>
       <div>
-        <Link className="exploreButton" to="/Loginpage">
+        <Link className="exploreButton" to="/LoginPage">
           EXPLORE
         </Link>
       </div>

@@ -2,20 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import WelcomePage from "./components/WelcomePage";
 import LoadingScreen from "./components/LoadingScreen";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import LoginPage from "./components/LoginPage";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <WelcomePage />,
-  },
-  {
-    path: "/LoginPage",
-    element: <LoginPage />,
-  },
-]);
 
 const App = () => {
   const [isLoading, setisLoading] = useState(true);
@@ -29,7 +17,11 @@ const App = () => {
 
     fakeDataFetch();
   }, []);
-  return isLoading ? <LoadingScreen /> : <RouterProvider router={router} />;
+  return (
+    <AnimatePresence mode="wait">
+      {isLoading ? <LoadingScreen /> : <WelcomePage />}
+    </AnimatePresence>
+  );
 };
 
 export default App;
