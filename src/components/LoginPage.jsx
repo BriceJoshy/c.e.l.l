@@ -1,6 +1,6 @@
 import React from "react";
 import LoginNavBar from "./LoginNavBar";
-import transition from "../transition";
+import Transition from "./Transition";
 
 const LoginPage = () => {
   return (
@@ -12,4 +12,4 @@ const LoginPage = () => {
   );
 };
 
-export default transition(LoginPage);
+export default LoginPage;

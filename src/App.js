@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import WelcomePage from "./components/WelcomePage";
 import LoadingScreen from "./components/LoadingScreen";
-import { AnimatePresence } from "framer-motion";
-import LoginPage from "./components/LoginPage";
+import Transition from "./components/Transition";
 
 const App = () => {
   const [isLoading, setisLoading] = useState(true);
@@ -12,16 +11,12 @@ const App = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setisLoading(false);
-      }, 5000);
+      }, 100);
     };
 
     fakeDataFetch();
   }, []);
-  return (
-    <AnimatePresence mode="wait">
-      {isLoading ? <LoadingScreen /> : <WelcomePage />}
-    </AnimatePresence>
-  );
+  return isLoading ? <LoadingScreen /> : <Transition />;
 };
 
 export default App;

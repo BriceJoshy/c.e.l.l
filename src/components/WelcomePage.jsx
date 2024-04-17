@@ -3,7 +3,7 @@ import TitleText from "./TitleText";
 import "../index.css";
 import { Link } from "react-router-dom";
 
-const WelcomePage = () => {
+const WelcomePage = ({ setScreen }) => {
   return (
     <>
       <div className="bgWelcome">
@@ -25,9 +25,14 @@ const WelcomePage = () => {
         </div>
       </div>
       <div>
-        <Link className="exploreButton" to="/LoginPage">
+        <div
+          className="exploreButton"
+          onClick={() => {
+            setScreen("LOGIN");
+          }}
+        >
           EXPLORE
-        </Link>
+        </div>
       </div>
     </>
   );
