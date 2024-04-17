@@ -2,6 +2,8 @@ import React from "react";
 import TitleText from "./TitleText";
 import "../index.css";
 import { Link } from "react-router-dom";
+import transition from "../transition";
+
 const WelcomePage = () => {
   return (
     <>
