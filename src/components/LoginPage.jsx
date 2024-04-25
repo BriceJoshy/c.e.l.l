@@ -1,12 +1,9 @@
 import React from "react";
 import LoginNavBar from "./LoginNavBar";
 import Name from "./LoginPageName";
-import { useState } from "react";
+import EmailPass from "./LoginEmailPass";
+
 const LoginPage = () => {
-  const [inputEmailValue, setInputEmailValue] = useState("");
-  const handleEmailInputChange = (event) => {
-    setInputEmailValue(event.target.value);
-  };
   return (
     <div className="loginBG">
       <div className="LoginPage">
@@ -32,27 +29,7 @@ const LoginPage = () => {
         <Name />
       </div>
       <div>
-        <div className="EmailInput">
-          <div className="row">
-            <input
-              className="EmailTextField"
-              value={inputEmailValue}
-              onChange={handleEmailInputChange}
-              required
-            />
-            <label
-              className={`floating-label ${inputEmailValue ? "active" : ""}`}
-            >
-              Email
-            </label>
-            <img
-              src={require("../assets/email.png")}
-              alt="name"
-              height={"20px"}
-              style={{ marginRight: "20px" }}
-            />
-          </div>
-        </div>
+        <EmailPass />
       </div>
     </div>
   );
