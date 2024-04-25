@@ -39,6 +39,7 @@ canvas {
   color: white;
   font-size: 40px;
   font-family: "Electrolize", sans-serif;
+  font-weight: bold;
   /* transform: translate(-50%, -50%); */
 }
 
@@ -83,9 +84,10 @@ canvas {
 
 .typewriterText {
   font-family: "Electrolize", sans-serif;
+  font-weight: bold;
   font-style: normal;
   letter-spacing: 10px;
-  font-family: monospace;
+  /* font-family: monospace; */
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -167,4 +169,104 @@ canvas {
 
 .signUpPart {
   margin-left: 100px;
+}
+
+.NameInput1 {
+  margin-left: 100px;
+  margin-top: 35px;
+  position: relative;
+  background-color: #272a37;
+  border-radius: 17px;
+  width: 165px;
+  padding-right: 25px;
+  padding-left: 27px;
+}
+.NameInput2 {
+  margin-left: 30px;
+  margin-top: 35px;
+  position: relative;
+  background-color: #272a37;
+  border-radius: 17px;
+  width: 165px;
+  padding-right: 25px;
+  padding-left: 27px;
+}
+.nameTextField {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  height: 40px;
+  width: 120px;
+  border-radius: 12px;
+  padding-right: 27px;
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  outline: none;
+  font-family: "Electrolize", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  caret-color: transparent;
+}
+
+.NameInput1:focus-within {
+  border: 3px solid #1d8de5;
+}
+.NameInput2:focus-within {
+  border: 3px solid #1d8de5;
+}
+
+.floating-label {
+  position: absolute;
+  top: 50%;
+  left: 27px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* When the input is focused or has text, move the label above */
+.floating-input:focus + .floating-label,
+.floating-label.active {
+  top: 18px;
+  left: 27px;
+  font-size: 10px;
+  color: #555;
+}
+.EmailInput {
+  margin-left: 100px;
+  margin-top: 18px;
+  position: relative;
+  background-color: #272a37;
+  border-radius: 17px;
+  width: 438px;
+  /* padding-right: 16px; */
+  padding-left: 27px;
+}
+.EmailTextField {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  height: 40px;
+  width: 422px;
+  border-radius: 12px;
+  padding-right: 20px;
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  outline: none;
+  font-family: "Electrolize", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  caret-color: transparent;
+}
+
+.EmailInput:focus-within {
+  border: 3px solid #1d8de5;
 }
