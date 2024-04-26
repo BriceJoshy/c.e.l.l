@@ -7,7 +7,7 @@ import { useState } from "react";
 const Transition = () => {
   const [screen, setScreen] = useState("WELCOME");
   return (
-    <div style={{ background: "#000" }}>
+    <div>
       <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: screen === "WELCOME" ? 1 : 0 }}

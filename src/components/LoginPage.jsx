@@ -2,10 +2,10 @@ import React from "react";
 import LoginNavBar from "./LoginNavBar";
 import Name from "./LoginPageName";
 import EmailPass from "./LoginEmailPass";
-
 const LoginPage = () => {
   return (
     <div className="loginBG">
+      <div id="loginBack"></div>
       <div className="LoginPage">
         <LoginNavBar />
       </div>
@@ -13,7 +13,7 @@ const LoginPage = () => {
         START FOR FREE
       </div>
       <div style={{ fontSize: "40px", marginLeft: "100px" }}>
-        Create new account <span style={{ color: "#1d8ff4" }}>.</span>
+        Create new account <span className="loginDot">.</span>
       </div>
       <div
         style={{
@@ -40,13 +40,7 @@ const LoginPage = () => {
       >
         Create Account
       </div>
-      <div className="LoginPageGif">
-        <img
-          src={require("../assets/loginrobot.gif")}
-          height={500}
-          alt="logo"
-        />
-      </div>
+      <div className="LoginPageGif"></div>
     </div>
   );
 };

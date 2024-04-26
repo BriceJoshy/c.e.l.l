@@ -11,7 +11,7 @@ const App = () => {
     const fakeDataFetch = () => {
       setTimeout(() => {
         setisLoading(false);
-      }, 100);
+      }, 3000);
     };
 
     fakeDataFetch();

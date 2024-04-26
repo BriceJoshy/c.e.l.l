@@ -8,7 +8,7 @@ const LoadingScreen = () => {
         <img
           src={require("../assets/loading.gif")}
           // width={150}
-          height={250}
+          height={400}
           alt="loading gif"
         />
       </div>

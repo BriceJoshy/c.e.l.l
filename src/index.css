@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 
 body {
+  overflow: hidden;
   color: black;
+  background-color: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -19,6 +21,7 @@ canvas {
   width: 100vw;
   height: 100vh;
 }
+
 .logo {
   /* width: 20px;
   height: 20px; */
@@ -45,7 +48,7 @@ canvas {
 
 .bgWelcome {
   /* background-image: url("./assets/bgWelcome.gif"); */
-  background-color: #040404;
+  background-color: #0000;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -65,7 +68,7 @@ canvas {
 }
 
 .centresubtitle {
-  color: grey;
+  color: white;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -133,19 +136,36 @@ canvas {
 }
 .exploreButton:hover {
   letter-spacing: 0.25em;
+  border-color: #d0f958;
+}
+
+#loginBack {
+  margin-left: 100px;
+  background-color: black;
+  background-image: url("./assets/11login_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+}
+
+.loginDot {
+  color: #1d8ff4;
+  font-size: 100px;
+  line-height: 0px;
 }
 
 .loginBG {
+  background-color: transparent;
   color: white;
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
   font-weight: bold;
   font-family: "Electrolize", sans-serif;
 }
 .LoginPage {
   padding: 25px 50px;
-  color: white;
   font-family: "Electrolize", sans-serif;
   font-style: normal;
 }
@@ -160,11 +180,6 @@ canvas {
 .row {
   display: flex;
   align-items: center;
-}
-
-.DimSpace {
-  margin-left: 150px;
-  color: gray;
 }
 
 .signUpPart {
@@ -282,7 +297,7 @@ canvas {
   margin-top: 52px;
   margin-left: 217px;
   color: white;
-  background: #1d8de5;
+  background: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 15px;
@@ -291,14 +306,15 @@ canvas {
   font-weight: bolder;
   padding: 17px 50px;
   transition: 0.5s;
-  /* border: 3px solid white; */
+  border: 3px solid white;
   border-radius: 40cm;
 }
 .CreateAccount:hover {
-  border: 1px solid white;
+  border: 3px dashed #d0f958;
 }
 
 .hover-underline-animation {
+  letter-spacing: 2px;
   margin-left: 150px;
   color: gray;
   display: inline-block;
@@ -314,7 +330,8 @@ canvas {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1d8de5;
+  background-color: #f500f5;
+
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -322,8 +339,12 @@ canvas {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  background-color: #1d8de5;
 }
 
+.hover-underline-animation:hover {
+  color: rgb(213, 213, 213);
+}
 .LoginPageGif {
   color: white;
   position: absolute;
