@@ -1,3 +1,5 @@
+import "../index.css";
+
 const LoginNavBar = () => {
   return (
     <div className="LoginNavBar">
@@ -5,8 +7,8 @@ const LoginNavBar = () => {
         <img src={require("../assets/darkMatter.gif")} height={50} alt="logo" />
         Welcome to C.E.L.L.
       </div>
-      <div className="DimSpace">Home</div>
-      <div className="DimSpace">Join</div>
+      <div className="hover-underline-animation">Home</div>
+      <div className="hover-underline-animation">Login</div>
     </div>
   );
 };

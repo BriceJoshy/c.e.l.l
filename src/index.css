@@ -275,3 +275,62 @@ canvas {
 .PasswordInput:focus-within {
   border: 3px solid #1d8de5;
 }
+
+.CreateAccount {
+  position: absolute;
+  /* top: 70%; */
+  margin-top: 52px;
+  margin-left: 217px;
+  color: white;
+  background: #1d8de5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+  padding: 17px 50px;
+  transition: 0.5s;
+  /* border: 3px solid white; */
+  border-radius: 40cm;
+}
+.CreateAccount:hover {
+  border: 1px solid white;
+}
+
+.hover-underline-animation {
+  margin-left: 150px;
+  color: gray;
+  display: inline-block;
+  position: relative;
+  /* color: #0087ca; */
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1d8de5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.LoginPageGif {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-family: "Electrolize", sans-serif;
+  font-style: normal;
+  font-size: 35px;
+}

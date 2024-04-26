@@ -31,6 +31,22 @@ const LoginPage = () => {
       <div>
         <EmailPass />
       </div>
+
+      <div
+        className="CreateAccount"
+        onClick={() => {
+          // setScreen("LOGIN");
+        }}
+      >
+        Create Account
+      </div>
+      <div className="LoginPageGif">
+        <img
+          src={require("../assets/loginrobot.gif")}
+          height={500}
+          alt="logo"
+        />
+      </div>
     </div>
   );
 };
