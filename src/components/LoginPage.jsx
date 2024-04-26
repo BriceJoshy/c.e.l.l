@@ -2,7 +2,7 @@ import React from "react";
 import LoginNavBar from "./LoginNavBar";
 import Name from "./LoginPageName";
 import EmailPass from "./LoginEmailPass";
-const LoginPage = () => {
+const LoginPage = ({ setScreen }) => {
   return (
     <div className="loginBG">
       <div id="loginBack"></div>
@@ -35,7 +35,7 @@ const LoginPage = () => {
       <div
         className="CreateAccount"
         onClick={() => {
-          // setScreen("LOGIN");
+          setScreen("HOME");
         }}
       >
         Create Account

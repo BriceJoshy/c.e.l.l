@@ -1,7 +1,14 @@
 import React from "react";
+import "./style.css";
 
 const HomeScreen = () => {
-  return <h1 style={{ color: "yellow" }}>HELLO</h1>;
+  return (
+    <>
+      <div className="row">
+        <div className=""></div>
+      </div>
+    </>
+  );
 };
 
 export default HomeScreen;
